@@ -1,10 +1,9 @@
 ---
-title: "QM 2022 Week 10: Maximum Likelihood Estimation"
+title: "QM 2023 Week 10: Maximum Likelihood Estimation"
 author:
   - "Oliver Rittmann"
   - "Domantas Undzėnas"
-  - "Lion Behrens"
-date: "November 09 | 10 | 11, 2022"
+date: "November 09 | 10 , 2023"
 output:
   html_document:
     toc: yes
