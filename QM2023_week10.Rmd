@@ -313,8 +313,9 @@ ggplot() +
   )
 ```
 
+## Maximum Likelihood as a continuous function {.tabset}
 
-Because $p$ can take any value between 0 and 1, we are dealing with a continuous distribution. Let's plot this and find the value of $p$ that maximizes the likelihood function (i.e., the value of $p$ that is *most likely given the observed data*)
+Because $p$ can take any value between 0 and 1, we are dealing with a continuous function. Let's plot this and find the value of $p$ that maximizes the likelihood function (i.e., the value of $p$ that is *most likely given the observed data*)
 
 ```{r mle-10,  class.source = 'fold-show'}
 # Let's start with a sequence
