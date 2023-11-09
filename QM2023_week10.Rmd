@@ -788,7 +788,7 @@ res <-
   sapply(b, function(x)
     lmsimple_loglik(y = Y, theta = cbind(x, sigma2)))
 
-min_loglik_b <- b[which.max(res)]
+max_loglik_b <- b[which.max(res)]
 ```
 
 ## Base R {-}
@@ -809,7 +809,7 @@ axis(2,
      at = axis_ticks,
      labels = paste0(axis_ticks/1000, "k"),
      las = 1)
-abline(v = min_loglik_b,
+abline(v = max_loglik_b,
        lwd = 2,
        col = magma(2)[2])
 ```
@@ -821,7 +821,7 @@ abline(v = min_loglik_b,
 ggplot() +
   geom_line(aes(x = b, y = res), color =  magma(2)[1]) +
   geom_vline(
-  xintercept = min_loglik_b,
+  xintercept = max_loglik_b,
   lty = "dashed",
   size = 1
   ) +
